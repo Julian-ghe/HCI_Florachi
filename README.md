@@ -1,8 +1,29 @@
 # HCI_Florachi
 
+Projekt Beschreibung
+
+WICHTIGE Anmerkung: Auf grund einer Restriktion benutzen wir anstatt eine Adruino Uno WIFI, einen Adruino R3 und Rasberry Pi 3 Model B zur Kommunikation, wenn ein Adruino Wifi vorrätig ist wär dies die einfachste Lösung.
+
 Harware Setup:
 - Florabox
+    - Komponeten:
+          - Arduino Uno (No WiFi)
+          - Rasberry Pi (WiFi)
+          - KY-013 Temperatur Sensor
+          - KY-018 Licht Sensor
+          - Arduino Wassersensor Modul
+          - Arduino LCD 1602 Display
+          - KY-004 Button
+          - Arduino Breadboard
+    - Verkablung:
+      
 - Florachi
+    - Komponenten:
+          - ESP32
+          - OLED-Display (SSD1306, 0.96")
+          - KY-006 Passive Buzzzer
+          - HC-SR04 Ultra-schallsensor
+    - Verkablung:
 
 Software Setup:
 - Intialization
