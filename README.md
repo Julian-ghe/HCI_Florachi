@@ -16,6 +16,8 @@ Harware Setup:
           - KY-004 Button
           - Arduino Breadboard
     - Verkablung:
+          - WICHTIGE Anmerkung: Wenn ein Rasberry Pi Angeschlossen wird, dann wird der Arduino mit USB zum Rasberry Pi verbunden.
+          ![Verkaubkung Florabox](./img/Verkablung-Florabox.png)
       
 - Florachi
     - Komponenten:
