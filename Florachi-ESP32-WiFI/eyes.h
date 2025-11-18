@@ -13,10 +13,11 @@ void lookLeft();
 void lookRight();
 void saccade();
 
-void cry(float health);
+void dead(float health);
 void sad(float health);
 void normal(float health);
 void happy(float health);
 void super_happy(float health);
+
 
 #endif
