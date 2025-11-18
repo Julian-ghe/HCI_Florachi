@@ -87,7 +87,7 @@ void playTone(int frequency, int duration) {
 
 //Melodien je nach Stimmung
 void playMelody(String mood) {
-  if (mood == "cry") {
+  if (mood == "dead") {
     playTone(150, 400);
     delay(100);
     playTone(120, 400);
@@ -169,8 +169,8 @@ void updateEmotion(float health) {
   health = constrain(health, 0, 100);
 
   if (health >= 0 && health <= 20) {
-    cry(health);
-    if (buzzerEnabled) playMelody("cry");
+    dead(health);
+    if (buzzerEnabled) playMelody("dead");
   } else if (health >= 21 && health <= 39) {
     sad(health);
     if (buzzerEnabled) playMelody("sad");
@@ -356,3 +356,4 @@ void loop() {
 
   delay(10); // kleine Pause
 }
+
