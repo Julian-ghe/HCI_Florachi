@@ -15,7 +15,7 @@ Falls ein Arduino Uno WiFi oder ein ESP32 für die Florabox verfügbar ist, kann
 # 1. Systemübersicht
 
 Die Architektur besteht aus drei Modulen, die über Serial und HTTP miteinander kommunizieren:
-![Systemarchitektur](./img/Systemarchitektur.png)
+![Systemarchitektur](./img/systemarchitektur.png)
 
 ## Module
 
@@ -148,7 +148,7 @@ Die Architektur besteht aus drei Modulen, die über Serial und HTTP miteinander 
 ### Build und Upload
 
 1. Projekt kompilieren  
-2. ESP32 per USB anschließen  
+2. ESP32 per USB anschliessen  
 3. Upload durchführen  
 4. Serial Monitor öffnen und prüfen:  
    - WLAN-Verbindung aktiv  
