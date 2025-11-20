@@ -15,7 +15,7 @@ Falls ein Arduino Uno WiFi oder ein ESP32 für die Florabox verfügbar ist, kann
 # 1. Systemübersicht
 
 Die Architektur besteht aus drei Modulen, die über Serial und HTTP miteinander kommunizieren:
-![Systemarchitektur](./img/systemarchitektur.png)
+![Systemarchitektur](./img/Systemarchitektur.png)
 
 ## Module
 
@@ -65,7 +65,7 @@ Die Architektur besteht aus drei Modulen, die über Serial und HTTP miteinander 
 - Arduino → Raspberry Pi über USB  
 - Referenzdiagramm:
 
-![Verkabelung Florabox](./img/Verkablung-Florabox.png)
+![Verkabelung Florabox](./img/Verkabelung-Florabox.png)
 
 ---
 
@@ -87,7 +87,7 @@ Die Architektur besteht aus drei Modulen, die über Serial und HTTP miteinander 
 - Buzzer → PWM-Pin  
 - ESP32 → 3.3V und GND (über 1→3-Verteilung)
 
-![Verkabelung Florachi](./img/Verkablung-Florachi.png)
+![Verkabelung Florachi](./img/Verkabelung-Florachi.png)
 
 ---
 
