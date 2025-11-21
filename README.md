@@ -8,7 +8,7 @@ Ein **Raspberry Pi** stellt diesen Wert per HTTP bereit.
 ---
 
 ## Hinweis zur Hardware
-Da kein Arduino Uno WiFi verfügbar war, wird ein **Arduino Uno R3 + Raspberry Pi 4 Model B** eingesetzt.  
+Da kein Arduino Uno WiFi verfügbar war, wird ein **Arduino Uno R3 + Raspberry Pi 5 Model B** eingesetzt.  
 Falls ein Arduino Uno WiFi oder ein ESP32 für die Florabox verfügbar ist, kann der Aufbau vereinfacht werden (Raspberry Pi entfällt).
 
 ---
@@ -24,7 +24,7 @@ Die Architektur besteht aus drei Modulen, die über Serial und HTTP miteinander 
 - Berechnung des **Health-Wertes**
 - Übertragung via **USB / Serial (9600 Baud)**
 
-### Lokaler Server (Raspberry Pi 4)
+### Lokaler Server (Raspberry Pi 5)
 - Liest serielle Daten vom Arduino
 - Stellt den Health-Wert über eine **HTTP-API (Flask)** bereit
 - Brücke zwischen kabelgebundener Florabox und WLAN-Client
@@ -48,7 +48,7 @@ Die Architektur besteht aus drei Modulen, die über Serial und HTTP miteinander 
 | **Komponente** | **Verwendung** | **Anzahl** |
 |----------------|----------------|------------|
 | Arduino Uno R3 | Steuereinheit, Sensorverarbeitung, Berechnung des Health-Wertes | 1 |
-| Raspberry Pi 4 Model B | Serielles Auslesen, Bereitstellen der HTTP-API | 1 |
+| Raspberry Pi 5 Model B | Serielles Auslesen, Bereitstellen der HTTP-API | 1 |
 | KY-013 Temperatursensor | Misst Temperatur | 1 |
 | KY-018 Lichtsensor | Misst Lichtintensität | 1 |
 | Wassersensor-Modul | Misst Feuchtigkeit / Wasserstand | 1 |
