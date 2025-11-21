@@ -9,7 +9,7 @@ void initEyes(Adafruit_SSD1306& display) {
 }
 
 
-// === Augenzeichnung ===
+// Augenzeichnung
 void draw_eyes(int left_eye_x, int left_eye_y, int right_eye_x, int right_eye_y) {
   displayPtr->clearDisplay();
   displayPtr->fillRoundRect(left_eye_x - 12, left_eye_y - 10, 24, 20, 4, SSD1306_WHITE);
@@ -47,6 +47,7 @@ void saccade() {
   center_eyes();
 }
 
+// Bit-Array für Emotionszustände
 const unsigned char epd_bitmap_super_happy [] PROGMEM = {
     
 	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 
@@ -355,7 +356,7 @@ void showFace(const unsigned char* bitmap) {
   displayPtr->display();
 }
 
-
+// Darstellung der Emotionszustände auf dem Display
 void dead(float health) {
   displayPtr->clearDisplay();
 
@@ -426,3 +427,4 @@ void super_happy(float health) {
   displayPtr->display();
 
 }
+
